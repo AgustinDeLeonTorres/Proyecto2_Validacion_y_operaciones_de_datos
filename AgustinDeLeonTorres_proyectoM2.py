@@ -19,7 +19,7 @@ else:
 print("*******************************")
 
 def encontrar_cuadrante():
-#Programa que determina el cuadrante de un punto en el plano cartesiano"""
+    #Programa que determina el cuadrante de un punto en el plano cartesiano
     print("\n=== DETERMINACIÓN DE CUADRANTE ===")
     
     try:
@@ -34,10 +34,10 @@ def encontrar_cuadrante():
             print("El punto se encuentra sobre el eje Y")
         elif y == 0:
             print("El punto se encuentra sobre el eje X")
-        # Ahora sí verificar los cuadrantes
-        elif x < 0 and y > 0:    # Cuadrante I: X negativa, Y positiva
+        # Ahora sí verificar los cuadrantes (CORREGIDOS)
+        elif x > 0 and y > 0:    # Cuadrante I: X positiva, Y positiva
             print("El punto se encuentra en el cuadrante I")
-        elif x > 0 and y > 0:    # Cuadrante II: X positiva, Y positiva
+        elif x < 0 and y > 0:    # Cuadrante II: X negativa, Y positiva
             print("El punto se encuentra en el cuadrante II")
         elif x < 0 and y < 0:    # Cuadrante III: X negativa, Y negativa
             print("El punto se encuentra en el cuadrante III")
